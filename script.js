@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const testImg = new Image();
             testImg.onload = function() {
                 console.log('Alternative path worked:', testImg.src);
-                // Update the CSS if we find a working path
                 document.querySelector('.parallax-collage').style.backgroundImage = `url('${testImg.src}')`;
             };
             testImg.src = alternativePaths[i];
