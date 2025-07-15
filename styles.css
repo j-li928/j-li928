@@ -18,6 +18,27 @@ h1 {
     font-stretch: ultra-condensed;
     transform: scaleX(0.9);
 }
+h2{
+    color: #000080;
+    background-color:#f4efe8;
+    font-family:'TiemposHeadline';
+    font-size: 100px;
+    font-weight: 50;
+    font-stretch: ultra-condensed;
+    transform: scaleX(0.9);
+    padding-left: 60vh;
+}
+
+h3{
+    color: #000080;
+    background-color:#f4efe8;
+    font-family:'TiemposHeadline';
+    font-size: 100px;
+    font-weight: 50;
+    font-stretch: ultra-condensed;
+    transform: scaleX(0.9);
+    justify-items: center;
+}
 
 .centered-text {
     text-align: center;
@@ -79,36 +100,96 @@ p {
 }
 
 .spacer{
-    padding: 500px;
+    padding: 150px;
+}
+
+.big-spacer{
+    padding: 200px;
 }
 
 .content {
   padding: 100px 20px;
-  background-color: whitesmoke;
-}
+    background-color: #f4efe8;}
 
 .section{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    background-color: #f4efe8;
     font-size: 3rem;
     padding: 40px;
 }
-.parallax {
-  background-image: url('./images/best_fit_collage.jpg');
-  min-height: 100vh;             
+
+.navy-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#000080;
+    font-size: 3rem;
+    padding: 40px;
+}
+.parallax-collage {
+  background-image: url('images/collage (1).jpg');
+  min-height: 500px;             
   background-attachment: fixed; 
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.content {
-  padding: 100px 20px;
-  background-color: whitesmoke;
+.parallax-color {
+    background-color: #000080;
+    width: 100%;
+    min-height: 100vh;             
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+.content {
+  padding: 100px 20px;
+    background-color: #f4efe8;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+.contact-icons a {
+  color: #000080;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #5d5d9898;
+}
+
+ul {
+  list-style-type: square; 
+  padding-left: 150px;
+  font-family: 'TiemposHeadline';
+  color:#000080;
+}
+
+li {
+  margin-bottom: 8px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.line-divider {
+    border: none;
+    height: 2px;
+    background: #000080;
+    width: 100%;
+    margin: 10px auto;
+}
 
 @font-face {
     font-family: 'TiemposHeadline';
