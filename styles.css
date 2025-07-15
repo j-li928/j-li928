@@ -1,0 +1,119 @@
+title {    
+    color: #000080;
+    size: 20;
+    font-family:'TiemposHeadline'
+}
+body {
+  background-color: #f4efe8;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+h1 {
+    color: #000080;
+    background-color:#f4efe8;
+    font-family:'TiemposHeadline';
+    font-size: 100px;
+    font-weight: 50;
+    font-stretch: ultra-condensed;
+    transform: scaleX(0.9);
+}
+
+.centered-text {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4efe8;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: center;
+}
+
+.j-text {
+    color: #000080;
+    font-family:'TiemposHeadline';
+    font-size: 200px;
+    font-weight: 3;
+    font-stretch: ultra-condensed;
+    transform: scaleX(0.9);
+    padding: 0px;
+    font-style: italic;
+}
+
+p {
+    font-family: 'TiemposHeadline';
+    color: #000080;
+    text-align: center;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 20px 30px;
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #000080;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'TiemposHeadline';
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5d5d9898;
+}
+
+.spacer{
+    padding: 500px;
+}
+
+.content {
+  padding: 100px 20px;
+  background-color: whitesmoke;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding: 40px;
+}
+.parallax {
+  background-image: url('./images/best_fit_collage.jpg');
+  min-height: 100vh;             
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  padding: 100px 20px;
+  background-color: whitesmoke;
+}
+
+
+@font-face {
+    font-family: 'TiemposHeadline';
+    src: url('../fonts/TiemposHeadline-Regular.woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
