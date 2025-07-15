@@ -131,7 +131,7 @@ p {
     padding: 40px;
 }
 .parallax-collage {
-  background-image: url('images/collage (1).jpg');
+  background-image: url('collage.jpg');
   min-height: 500px;             
   background-attachment: fixed; 
   background-position: center;
@@ -193,7 +193,7 @@ html {
 
 @font-face {
     font-family: 'TiemposHeadline';
-    src: url('../fonts/TiemposHeadline-Regular.woff2');
+    src: url('TiemposHeadline-Regular.woff2');
     font-weight: 100;
     font-style: normal;
 }
