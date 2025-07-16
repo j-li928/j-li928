@@ -146,7 +146,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  will-change: transform;
 }
 
 .parallax-color {
@@ -276,9 +275,8 @@ html {
   }
   
   .parallax-collage {
-    background-attachment: fixed;
     min-height: 300px;
-    background-size: cover;
+    background-attachment: scroll;
   }
   
   .centered-text {
@@ -345,8 +343,7 @@ html {
   
   .parallax-collage {
     min-height: 200px;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: scroll;
   }
 }
 
