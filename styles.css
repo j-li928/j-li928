@@ -32,6 +32,7 @@ h2{
     transform: scaleX(0.9);
     padding-left: 60vh;
     margin: 0;
+    text-align: center;
 }
 
 h3{
@@ -183,6 +184,8 @@ ul {
   padding-left: 150px;
   font-family: 'TiemposHeadline';
   color:#000080;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 li {
@@ -221,7 +224,7 @@ html {
   
   h2 {
     font-size: 60px;
-    padding-left: 20px;
+    padding-left: 0;
     text-align: center;
   }
   
@@ -266,8 +269,9 @@ html {
   }
   
   ul {
-    padding-left: 40px;
+    padding-left: 20px;
     padding-right: 20px;
+    max-width: 100%;
   }
   
   .parallax-collage {
@@ -289,7 +293,8 @@ html {
   
   h2 {
     font-size: 40px;
-    padding-left: 10px;
+    padding-left: 0;
+    text-align: center;
   }
   
   h3 {
@@ -331,8 +336,9 @@ html {
   }
   
   ul {
-    padding-left: 30px;
+    padding-left: 15px;
     padding-right: 15px;
+    max-width: 100%;
   }
   
   .parallax-collage {
