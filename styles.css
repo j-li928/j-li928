@@ -6,13 +6,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-display: swap;
 }
 
 h1 {
     color: #000080;
     background-color:#f4efe8;
-    font-family:'TiemposHeadline', 'Times New Roman', serif;
+    font-family:'TiemposHeadline';
     font-size: 100px;
     font-weight: 50;
     font-stretch: ultra-condensed;
@@ -23,7 +22,7 @@ h1 {
 h2{
     color: #000080;
     background-color:#f4efe8;
-    font-family:'TiemposHeadline', 'Times New Roman', serif;
+    font-family:'TiemposHeadline';
     font-size: 100px;
     font-weight: 50;
     font-stretch: ultra-condensed;
@@ -35,7 +34,7 @@ h2{
 h3{
     color: #000080;
     background-color:#f4efe8;
-    font-family:'TiemposHeadline', 'Times New Roman', serif;
+    font-family:'TiemposHeadline';
     font-size: 100px;
     font-weight: 50;
     font-stretch: ultra-condensed;
@@ -57,7 +56,7 @@ h3{
 
 .j-text {
     color: #000080;
-    font-family:'TiemposHeadline', 'Times New Roman', serif;
+    font-family:'TiemposHeadline';
     font-size: 200px;
     font-weight: 3;
     font-stretch: ultra-condensed;
@@ -67,7 +66,7 @@ h3{
 }
 
 p {
-    font-family: 'TiemposHeadline', 'Times New Roman', serif;
+    font-family: 'TiemposHeadline';
     color: #000080;
     text-align: center;
 }
@@ -113,7 +112,7 @@ p {
 ul {
   list-style-type: square; 
   padding-left: 150px;
-  font-family: 'TiemposHeadline', 'Times New Roman', serif;
+  font-family: 'TiemposHeadline';
   color:#000080;
   max-width: 800px;
   margin: 0 auto;
@@ -145,24 +144,12 @@ html {
 
 .character-text {
     font-size: 17px;
-    display: inline-block;
-    white-space: nowrap;
-    margin: 0 10px;
-    text-align: center;
-    writing-mode: horizontal-tb;
-    text-orientation: mixed;
-    -webkit-writing-mode: horizontal-tb;
-    -webkit-text-orientation: mixed;
 }
 
 .characters-div {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  min-height: 30px;
 }
 
 .scroll-container {
@@ -170,29 +157,12 @@ html {
   width: 100%;
   background: transparent;
   padding: 30px;
-  position: relative;
 }
 
 .scroll-content {
   display: flex;
   width: 200%;
   animation: scroll-left 7s linear infinite;
-  will-change: transform;
-  transform: translateZ(0);
-  -webkit-animation: scroll-left 7s linear infinite;
-  -webkit-transform: translateZ(0);
-  -moz-animation: scroll-left 7s linear infinite;
-  -moz-transform: translateZ(0);
-  -ms-animation: scroll-left 7s linear infinite;
-  -ms-transform: translateZ(0);
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
 }
 
 .scroll-content .nav-text {
@@ -201,8 +171,6 @@ html {
   justify-content: space-around;
   margin: 0;
   padding: 0 45px;
-  flex-shrink: 0;
-  min-width: 0;
 }
 
 .scroll-content .nav-text a {
@@ -210,11 +178,9 @@ html {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
-  font-family: 'TiemposHeadline', 'Times New Roman', serif;
+  font-family: 'TiemposHeadline';
   transition: color 0.3s ease;
   white-space: nowrap;
-  flex-shrink: 0;
-  display: inline-block;
 }
 
 .scroll-content .nav-text a:hover {
@@ -223,10 +189,8 @@ html {
 
 .scroll-container:hover .scroll-content {
   animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -ms-animation-play-state: paused;
 }
+
 
 @keyframes scroll-left {
   0% {
@@ -237,41 +201,11 @@ html {
   }
 }
 
-@-webkit-keyframes scroll-left {
-  0% {
-    -webkit-transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-50%);
-  }
-}
-
-@-moz-keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(0);
-  }
-  100% {
-    -moz-transform: translateX(-50%);
-  }
-}
-
-@-ms-keyframes scroll-left {
-  0% {
-    -ms-transform: translateX(0);
-  }
-  100% {
-    -ms-transform: translateX(-50%);
-  }
-}
-
 @font-face {
     font-family: 'TiemposHeadline';
-    src: url('./TiemposHeadline-Regular.woff2') format('woff2'),
-         url('TiemposHeadline-Regular.woff2') format('woff2'),
-         url('TiemposHeadline-Regular.woff') format('woff');
+    src: url('TiemposHeadline-Regular.woff2');
     font-weight: 100;
     font-style: normal;
-    font-display: swap;
 }
 
 
