@@ -1,3 +1,4 @@
+
 console.log("JavaScript is working!");
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -30,4 +31,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-

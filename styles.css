@@ -1,14 +1,11 @@
-title {    
-    color: #000080;
-    size: 20;
-    font-family:'TiemposHeadline'
-}
+
 body {
   background-color: #f4efe8;
   font-family: sans-serif;
   align-items: center;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -30,7 +27,6 @@ h2{
     font-weight: 50;
     font-stretch: ultra-condensed;
     transform: scaleX(0.9);
-    padding-left: 60vh;
     margin: 0;
     text-align: center;
 }
@@ -75,38 +71,7 @@ p {
     text-align: center;
 }
 
-.navbar {
-  background-color: transparent;
-  padding: 20px 30px;
-  position: fixed;      
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; 
-  box-sizing: border-box;
-}
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: #000080;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: 'TiemposHeadline';
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #5d5d9898;
-}
 
 .spacer{
     padding: 200px;
@@ -118,49 +83,14 @@ p {
 
 .content {
   padding: 100px 20px;
-    background-color: #f4efe8;}
+  background-color: #f4efe8;}
 
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f4efe8;
-    font-size: 3rem;
-    padding: 40px;
-}
 
-.navy-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color:#000080;
-    font-size: 3rem;
-    padding: 40px;
-}
-.parallax-collage {
-  background-image: url('https://j-li928.github.io/j-li928/collage.jpg');
-  min-height: 500px;             
-  background-attachment: fixed; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.parallax-color {
-    background-color: #000080;
-    width: 100%;
-    min-height: 100vh;             
-    background-attachment: fixed; 
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.content {
-  padding: 100px 20px;
-    background-color: #f4efe8;
-}
+
+
+
 
 .contact-icons {
   display: flex;
@@ -193,6 +123,7 @@ li {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .line-divider {
@@ -207,6 +138,67 @@ html {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow-x: hidden;
+}
+
+
+.character-text {
+    font-size: 17px;
+}
+
+.characters-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+  padding: 30px;
+}
+
+.scroll-content {
+  display: flex;
+  width: 200%;
+  animation: scroll-left 7s linear infinite;
+}
+
+.scroll-content .nav-text {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0 45px;
+}
+
+.scroll-content .nav-text a {
+  color: #000080;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'TiemposHeadline';
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.scroll-content .nav-text a:hover {
+  color: #5d5d9898;
+}
+
+.scroll-container:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @font-face {
@@ -215,6 +207,7 @@ html {
     font-weight: 100;
     font-style: normal;
 }
+
 
 
 @media (max-width: 768px) {
@@ -236,19 +229,8 @@ html {
     font-size: 120px;
   }
   
-  .navbar {
-    padding: 15px 20px;
-  }
-  
-  .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .nav-links a {
-    font-size: 14px;
-  }
+
+
   
   .spacer {
     padding: 80px;
@@ -274,10 +256,7 @@ html {
     max-width: 100%;
   }
   
-  .parallax-collage {
-    min-height: 300px;
-    background-attachment: scroll;
-  }
+
   
   .centered-text {
     flex-direction: column;
@@ -285,6 +264,8 @@ html {
     gap: 5px;
   }
 }
+
+
 
 @media (max-width: 480px) {
   h1 {
@@ -305,17 +286,7 @@ html {
     font-size: 80px;
   }
   
-  .navbar {
-    padding: 10px 15px;
-  }
-  
-  .nav-links {
-    gap: 10px;
-  }
-  
-  .nav-links a {
-    font-size: 12px;
-  }
+
   
   .spacer {
     padding: 50px;
@@ -341,9 +312,5 @@ html {
     max-width: 100%;
   }
   
-  .parallax-collage {
-    min-height: 200px;
-    background-attachment: scroll;
-  }
-}
 
+}
