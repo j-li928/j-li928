@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-display: swap;
 }
 
 h1 {
@@ -146,6 +147,12 @@ html {
     font-size: 17px;
     display: inline-block;
     white-space: nowrap;
+    margin: 0 10px;
+    text-align: center;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    -webkit-writing-mode: horizontal-tb;
+    -webkit-text-orientation: mixed;
 }
 
 .characters-div {
@@ -154,6 +161,8 @@ html {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 30px;
 }
 
 .scroll-container {
@@ -161,7 +170,7 @@ html {
   width: 100%;
   background: transparent;
   padding: 30px;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 .scroll-content {
@@ -172,6 +181,18 @@ html {
   transform: translateZ(0);
   -webkit-animation: scroll-left 7s linear infinite;
   -webkit-transform: translateZ(0);
+  -moz-animation: scroll-left 7s linear infinite;
+  -moz-transform: translateZ(0);
+  -ms-animation: scroll-left 7s linear infinite;
+  -ms-transform: translateZ(0);
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
 }
 
 .scroll-content .nav-text {
@@ -180,6 +201,8 @@ html {
   justify-content: space-around;
   margin: 0;
   padding: 0 45px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .scroll-content .nav-text a {
@@ -190,6 +213,8 @@ html {
   font-family: 'TiemposHeadline', 'Times New Roman', serif;
   transition: color 0.3s ease;
   white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-block;
 }
 
 .scroll-content .nav-text a:hover {
@@ -198,33 +223,52 @@ html {
 
 .scroll-container:hover .scroll-content {
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
 }
-
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(0) translateZ(0);
-    -webkit-transform: translateX(0) translateZ(0);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%) translateZ(0);
-    -webkit-transform: translateX(-50%) translateZ(0);
+    transform: translateX(-50%);
   }
 }
 
 @-webkit-keyframes scroll-left {
   0% {
-    -webkit-transform: translateX(0) translateZ(0);
+    -webkit-transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-50%) translateZ(0);
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}
+
+@-ms-keyframes scroll-left {
+  0% {
+    -ms-transform: translateX(0);
+  }
+  100% {
+    -ms-transform: translateX(-50%);
   }
 }
 
 @font-face {
     font-family: 'TiemposHeadline';
     src: url('./TiemposHeadline-Regular.woff2') format('woff2'),
-         url('TiemposHeadline-Regular.woff2') format('woff2');
+         url('TiemposHeadline-Regular.woff2') format('woff2'),
+         url('TiemposHeadline-Regular.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
